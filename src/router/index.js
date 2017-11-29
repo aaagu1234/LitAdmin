@@ -86,7 +86,7 @@ let router = new Router({
     }
   ]
 })
-
+//你可以使用 router.beforeEach 注册一个全局前置守卫：
 router.beforeEach((to, from, next) => {
   // console.log('to:' + to.path)
   if (to.path.startsWith('/login')) {
